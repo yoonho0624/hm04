@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<!--이 부분은 주석문입니다. 웹 브라우저는 주석을 화면에 출력하지 않습니다.-->
+<html>
+	<head>
+		<!-- 문서제목, 자바스크립트 코드, CSS 스타일 정의, 메타데이터정의 -->
+		<meta charset="utf-8">
+		<title> hm04 나의 정보 </title>
+		<style>
+		@keyframes textColorAnimation {
+			0% { color : rgb(224, 135, 187);}
+			30% { color : rgb(67, 192, 123); }
+			100% { color : rgb(209, 97, 97);}
+			}
+			span {
+				animation-name: textColorAnimation;
+				animation-duration: 5s;
+				animation-iteration-count: infinite;
+			}
+			span {
+				transition : font-size 5s;
+			}
+			span:hover {
+				font-size : 300%;
+			}
+		</style>
+	</head>
+
+	<body>
+		<h3>나의 하루</h3>
+		<hr />
+		<ul>
+			<span>
+			<li>
+				08:00 : 기상
+			</li>
+			<li>
+				08:00~08:30 : 샤워
+			</li>
+			<li>
+				09:00~ : 수업
+			</li>
+			<li>
+				12:00~13:00 : 점심 식사
+			</li>
+			<li>
+				16:00~18:00 : 게임
+			</li>
+			<li>
+				18:00~19:00 : 저녁 식사
+			</li>
+			<li>
+				19:00~20:00 : 과제
+			</li>
+			<li>
+				20:00~22:00 : 유튜브 시청
+			</li>
+			<li>
+				23:00~24:00 : 운동
+			</li>
+			<li>
+				24:00~ : 취침
+			</li>
+		</span>
+		</ul>
+	</body>
+
+</html>
+

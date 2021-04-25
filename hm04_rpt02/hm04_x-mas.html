@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<!-- 이 부분은 주석문입니다. 웹 브라우저는 주석을 화면에 출력하지 않습니다. -->
+<html>
+	<head>
+		<!-- 문서제목, 자바스크립트 코드, CSS 스타일 정의, 메타데이터정의 -->
+		<meta charset="utf-8">
+		<title>hm04 X-MAS파티</title>
+		<style>
+			input[type=text] {/* text 창에만 적용 */
+				color: blue;
+			}
+			input:hover, textarea:hover {/* 마우스 올라 올 때 */
+				background: aliceblue;
+			}
+			input[type=text]:focus, input[type=email]:focus {/* 포커스 받을 때 */
+				font-size: 120%;
+			}
+			label {
+				display: block; /* 새 라인에서 시작 */
+				padding: 10px;
+			}
+			label span {
+				float: left;
+				width: 90px;
+				text-align: right;
+				padding: 10px;
+			}
+			@keyframes textColorAnimation {
+			0% { color : blueviolet;}
+			30% { color : skyblue; }
+			100% { color : mediumspringgreen;}
+			}
+			span {
+				animation-name: textColorAnimation;
+				animation-duration: 5s;
+				animation-iteration-count: infinite;
+			}
+		</style>
+		<script></script>
+	</head>
+
+	<body>
+		<!-- 문서의 본문 텍스트, 이미지, 테이블, 자바스크립트 코드, 동영상 등 -->
+		<h3>X-MAS파티</h3>
+		<hr>
+		<form>
+			<label> <span>이름</span>
+				<input type="text" placeholder="이름">
+				<br>
+			</label>
+			<label> <span>전화번호</span>
+				<input type="text" placeholder="전화번호">
+			</label>
+			<label> <span>참석여부</span>				
+				<input type="text" placeholder="참석여부"> 
+			</label>
+			<label> <span></span>
+				<input type="submit" value="제출">
+			</label>
+		</form>
+		<p>
+			12월 23일날 문자로 공지
+		</p>
+
+	</body>
+
+</html>
+

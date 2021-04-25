@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<!--이 부분은 주석문입니다. 웹 브라우저는 주석을 화면에 출력하지 않습니다.-->
+<html>
+	<head>
+		<!-- 문서제목, 자바스크립트 코드, CSS 스타일 정의, 메타데이터정의 -->
+		<meta charset="utf-8">
+		<title> hm04 좋아하는 영화 </title>
+		<style>
+			
+		
+		</style>
+		<script>
+			function load() {
+			  var select = document.getElementById("site");
+			  window.location = select.options[select.selectedIndex].value;
+			}
+			function openURL() {
+			  var select = document.getElementById("site");
+			  url = select.options[select.selectedIndex].value;
+			  //document.write(url);
+			  window.open(url, "myWin", "left=300,top=300,width=1000,height=800");
+			}
+			  </script>
+	</head>
+
+	<body>
+		<h3>좋아하는 영화</h3>
+		<hr />
+		영화 선택 :
+		<select id="site" onchange="openURL();">
+		  <option value="#">Select Movie </option>
+		  <option value="hm04_신세계.html">신세계 </option>
+		  <option value="hm04_알라딘.html">알라딘 </option>
+		  <option value="hm04_비긴 어게인.html">비긴 어게인 </option>
+		</select>
+	</body>
+
+</html>
+

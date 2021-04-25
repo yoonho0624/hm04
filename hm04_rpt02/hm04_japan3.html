@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<!--이 부분은 주석문입니다. 웹 브라우저는 주석을 화면에 출력하지 않습니다.-->
+<html>
+	<head>
+		<!-- 문서제목, 자바스크립트 코드, CSS 스타일 정의, 메타데이터정의 -->
+		<meta charset="utf-8">
+		<title> hm04 철학의 길 </title>
+		<style>
+		
+		</style>
+		<script>
+			var newWin = null;
+// 새로 연 윈도우 기억
+function load(URL) {
+  newWin = window.open(
+	URL,
+	"myWin",
+	"left=300,top=200,width=1200,height=900"
+  );
+}
+
+function closeNewWindow() {
+  if (newWin == null || newWin.closed())
+	// 윈도우가 열리지 않았거나 닫힌 경우
+	return;
+  // 윈도우가 없는 경우 그냥 리턴
+  else
+	newWin.close();
+  // 열어 놓은 윈도우 닫기
+}
+		</script>
+	</head>
+
+	<body>
+			<h3>여행가고 싶은 나라 : 일본</h3>
+			<ul>
+				<li><h3>철학의 길</h3></li><hr>
+				<img src="media/철학의 길.jpeg" width="500" height="500">
+				<li><hr><h3></h3>
+				<P>
+					<a href="https://www.tripadvisor.co.kr/Attraction_Review-g298564-d545965-Reviews-Philosopher_s_Walk-Kyoto_Kyoto_Prefecture_Kinki.html">지도와 후기 보기</a></P>
+					<li><a href="https://namu.wiki/w/%EC%B2%A0%ED%95%99%EC%9D%98%20%EA%B8%B8" target="_self">철학의 길에 대한 설명</a></p>
+				</P></li>
+				<li><a href="hm04_여행가고 싶은 나라.html" target="_self">처음으로</a></li>
+				<li><a href="hm04_japan2.html" target="_self">이전으로</a></li>
+				<li><a href="javascript:window.close()"> 현재 윈도우 닫기</a></li>
+		</ul>
+	</body>
+
+</html>
+

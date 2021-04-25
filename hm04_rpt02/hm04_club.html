@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<!-- 이 부분은 주석문입니다. 웹 브라우저는 주석을 화면에 출력하지 않습니다. -->
+<html>
+
+<head>
+    <!-- 문서제목, 자바스크립트 코드, CSS 스타일 정의, 메타데이터정의 -->
+    <meta charset="utf-8">
+    <title>hm04 동호회 모집</title>
+    <style>
+		input[type=text] {
+			color : green;
+		}
+		input:hover, textarea:hover {
+			background : aliceblue;
+		}
+		input[type=text]:focus, input[type=email]:focus {
+			font-size:120%;
+		}
+		label {
+			display : block;
+			padding : 10px;
+		}
+		label span {
+			float : left;
+			width : 90px;
+			text-align : right;
+			padding : 10px;
+		}
+		@keyframes textColorAnimation {
+			0% { color : blueviolet;}
+			30% { color : skyblue; }
+			100% { color : mediumspringgreen;}
+			}
+			span {
+				animation-name: textColorAnimation;
+				animation-duration: 5s;
+				animation-iteration-count: infinite;
+			}
+    </style>
+    <script></script>
+</head>
+
+<body>
+    <!-- 문서의 본문 텍스트, 이미지, 테이블, 자바스크립트 코드, 동영상 등 -->
+    <h3>싸이클 동호회 모집</h3>
+	<hr>
+	
+    <form>
+        <fieldset>
+           <legend>회원정보</legend>
+				  <span>이름</span>  : <input type="text"><br>
+				  <span>이메일</sapn>    : <input type="text"><br>
+				  <span>나이</span>    : <input type="text"><br>
+				  <span>전화번호</span> : <input type="text"><br>
+				  <span>사는 곳</span>  : <input type="text"><br>
+			<label> <span></span>
+				<input type="submit" value="제출">
+			</label>
+        </fieldset>
+        <small>질문 : Tel. 010-****-6251</small>
+    </form>
+	<hr>
+            <h3 onmouseover="show()" onmouseout="hide()">
+동아리 활동</h3>
+            <hr>
+
+    <p>저희 동아리는 같이 자전거 타는 동호회입니다.</p>
+	<p>활동은 주말마다 하며 참석은 자유입니다. </p>
+    <p>동아리 가입신청전화 010-****-6251</p>
+	<img src="media/자전거.jpeg" width="300" height="300"><img src="media/자전거1.jpeg" width="300" height="300"><img src="media/자전거2.jpeg" width="300" height="300">
+</body>
+
+</html>
