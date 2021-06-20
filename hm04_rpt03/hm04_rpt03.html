@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<!-- 이 부분은 주석문입니다. 웹 브라우저는 주석을 화면에 출력하지 않습니다. -->
+<html>
+  <head>
+    <!-- 문서제목, 자바스크립트 코드, CSS 스타일 정의, 메타데이터정의 -->
+    <meta charset="utf-8" />
+    <title>hm04 : 나는 누구인가?</title>
+    <style></style>
+    <script>
+    </script>
+  </head>
+<style>
+			body {background-image: url('media/124.jpg');
+      background-repeat:no-repeat;
+      background-position: center;
+      background-size: cover;}
+			span {color: mediumspringgreen; font-size: 20px;}
+      #menubar {
+				background: blank;
+			}
+			#menubar ul {/* 여백과 패딩 모두 0 */
+				margin: 0;
+				padding: 0;
+				width: 1100px; /* 모든 아이템(<li>)을 한 줄에 품을 수 있는 폭 */
+			}
+			#menubar ul li {
+				display: inline; /* 새 줄로 넘어가지 않게 */
+				list-style-type: none;	/* 마커 삭제 */
+				padding: 0px 15px; /* top=bottom=0, left=right=15px */
+			}
+			#menubar ul li a {
+				color: black;
+				text-decoration:none; /* 링크 보이지 않게 */
+			}
+			#menubar ul li a:hover  {
+				color: red; /* 마우스 올라 갈 때 색 */
+			}
+      @keyframes bomb {
+			from{font-size: 500%;}
+			to{font-size: 100%;}
+			}
+      #hes :hover{
+        color: green;
+
+      }
+
+      
+</style>
+  <body>
+    <!-- 문서의 본문 텍스트, 이미지, 테이블, 자바스크립트 코드, 동영상 등 -->
+    <h2>
+      <header id="hes"><span>hm04 : 나는 누구인가?</span></header>
+    </h2>
+    <head>
+      <nav id="menubar">
+        <ul>
+           <li>
+            <a href="hm04_info.html" target="right" onmouseover="this.style.backgroundColor='violet'"
+            onmouseout="this.style.backgroundColor=''">My info</a>
+             </a>
+          </li>
+          <li>
+            <a href="hm04_My daily life.html"onmouseover="this.style.backgroundColor='yellow'"
+            onmouseout="this.style.backgroundColor=''">my daily life</a>
+          </li>
+          <li>
+            <a href="hm04_best movie.html"onmouseover="this.style.backgroundColor='mediumturquoise'"
+            onmouseout="this.style.backgroundColor=''">좋아하는 영화</a>
+          </li>
+          <li>
+            <a href="hm04_여행가고 싶은 나라.html"onmouseover="this.style.backgroundColor='skyblue'"
+            onmouseout="this.style.backgroundColor=''">여행가고 싶은 나라</a>
+          </li>
+          <li>
+            <a href="https://github.com/yoonho0624/hm04"onmouseover="this.style.backgroundColor='mediumorchid'"
+            onmouseout="this.style.backgroundColor=''">HTML5 강의홈피</a>
+          </li>
+        </ul>
+      </nav>
+      <hr />
+    <iframe
+      src="hm04_info.html"
+      name="right"
+      width="1000"
+      height="600"
+    ></iframe>
+    <iframe src="https://www.weather.go.kr/w/weather/forecast/short-term.do" name="" width="850" height="600"></iframe>
+  <hr/>
+  <head>
+    <nav id="menubar">
+      <ul>
+        <li>
+          <a href="hm04_x-mas card.html"onmouseover="this.style.backgroundColor='khaki'"
+          onmouseout="this.style.backgroundColor=''">X-MAS파티 초대장</a>
+        </li>
+        <li>
+          <a href="hm04_club.html"onmouseover="this.style.backgroundColor='cornflowerblue'"
+          onmouseout="this.style.backgroundColor=''">동호회</a>
+        </li>
+        <li>
+          <a href="hm04_fancy_calc.html" target="right" onmouseover="this.style.backgroundColor='aqua'"
+          onmouseout="this.style.backgroundColor=''">계산기</a>
+           </a>
+        </li>
+        <li>
+          <a href="hm04_analog clock.html" target="right" onmouseover="this.style.backgroundColor='hotpink'"
+          onmouseout="this.style.backgroundColor=''">아날로그 시계</a>
+           </a>
+        </li>
+        <li>
+          <a href="hm04_animal.html" target="right" onmouseover="this.style.backgroundColor='cyan'"
+          onmouseout="this.style.backgroundColor=''">좋아하는 동물 5가지</a>
+           </a>
+        </li>
+      </ul>
+    </nav>
+    <hr />
+  <h3>현재 시간</h3>
+    <hr />
+    <script>
+      var now = new Date();
+      // 현재 시간 값을 가진 Date 객체 생성
+      document.write(now.getFullYear()+"년도");
+      document.write(now.getMonth()+1+"월");
+      document.write(now.getDate()+"일");
+      document.write(now.getHours()+"시");
+      document.write(now.getMinutes()+"분");
+      document.write(now.getSeconds()+"초");
+      document.write(now.getMilliseconds()+"밀리초<hr>");
+
+      
+    </script>
+    		<div id="music">
+			<audio src="media/RAIDER 150 ni DJ RR [DJ RR REMIX].mp3" controls autoplay loop></audio>
+			</audio>
+        </div>
+  </body>
+</html>

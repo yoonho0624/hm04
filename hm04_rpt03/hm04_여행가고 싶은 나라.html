@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<!--이 부분은 주석문입니다. 웹 브라우저는 주석을 화면에 출력하지 않습니다.-->
+<html>
+	<head>
+		<!-- 문서제목, 자바스크립트 코드, CSS 스타일 정의, 메타데이터정의 -->
+		<meta charset="utf-8">
+		<title> hm04 여행가고 싶은 나라 </title>
+		<style>
+		
+		</style>
+		<script>
+			      function load() {
+        var select = document.getElementById("site");
+        window.location = select.options[select.selectedIndex].value;
+      }
+      function openURL() {
+        var select = document.getElementById("site");
+        url = select.options[select.selectedIndex].value;
+        window.open(url, "myWin", "left=300,top=300,width=1000,height=800");
+      }
+		</script>
+	</head>
+
+	<body>
+		<div><span id="div"style="background-color:beige">여행가고 싶은 나라 </span></div>
+			<script>
+				var div=document.getElementById("div");
+				var timerID=setInterval("doRotate()",200);
+			
+				div.onclick=function(e){
+					clearInterval(timerID);
+				}
+			
+				function doRotate(){
+					var str=div.innerHTML;
+					var firstChar = str.substr(0,1);
+					var remains=str.substr(1,str.length-1);
+					str=remains+firstChar;
+					div.innerHTML=str;
+				}
+			</script>
+		</h3>
+		<hr />
+		나라 선택 :
+		<select id="site" onchange="openURL();">
+		  <option value="#">Select Country </option>
+		  <option value="hm04_australia1.html">호주 </option>
+		  <option value="hm04_england1.html">영국 </option>
+		  <option value="hm04_japan1.html">일본 </option>
+		</select>
+	</body>
+
+</html>
+
+<script>
+	var div=document.getElementById("div");
+	var timerID=setInterval("doRotate()",200);
+
+	div.onclick=function(e){
+		clearInterval(timerID);
+	}
+
+	function doRotate(){
+		var str=div.innerHTML;
+		var firstChar = str.substr(0,1);
+		var remains=str.substr(1,str.length-1);
+		str=remains+firstChar;
+		div.innerHTML=str;
+	}
+</script>
+<script>function hideMenu(){
+alert("오른쪽 클릭<컨텍스트 메뉴>금지");
+return false;
+}
+document.oncontextmenu=hideMenu;</script>

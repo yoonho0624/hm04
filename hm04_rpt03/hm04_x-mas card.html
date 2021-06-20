@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<!-- 이 부분은 주석문입니다. 웹 브라우저는 주석을 화면에 출력하지 않습니다. -->
+<html>
+	<head>
+		<!-- 문서제목, 자바스크립트 코드, CSS 스타일 정의, 메타데이터정의 -->
+		<meta charset="utf-8">
+		<title>hm04 X-MAS카드</title>
+		<style>
+			#music {
+				position: fixed;
+				top: 460px;
+				left: 10px;
+			}
+            #hm04{
+				position: fixed;
+				top: 380px;
+				left: 300px;
+				background:rgb(202, 181, 241);
+				color: green;
+			}
+			#te {
+				position: absolute;
+				top: 70px;
+				background:rgb(216, 25, 25);
+			}
+			#tree {
+				position: fixed;
+				top: 115px;
+				left: 60px;
+			}
+			#asd {
+				position: fixed;
+				top: 250px;
+				left: 100px;
+			}
+			#qwer {
+				position: fixed;
+				top: 220px;
+				left: 250px;
+			}
+			#zxc {
+				position: fixed;
+				top: 150px;
+				left: 130px;
+			}
+			div {
+				display: inline-block;
+				position: fixed;
+				border: 1px solid lightgray;
+			}
+			
+			div > p {
+				display: inline-block; /* div의 자식 p */
+				position: fixed;
+				height: 20px;
+				width: 15px;
+				background: lightgray;
+			}
+			@keyframes textColorAnimation {
+			0% { color : yellow; font-size: 50%;}
+			30% { color : blue; font-size: 100%; }
+			100% { color : green; font-size: 10%; }
+			}
+			span {
+				animation-name: textColorAnimation;
+				animation-duration: 5s;
+				animation-iteration-count: infinite;
+			}
+		</style>
+		<script></script>
+	</head>
+
+	<body>
+		<!-- 문서의 본문 텍스트, 이미지, 테이블, 자바스크립트 코드, 동영상 등 -->
+		<h3><span>Merry Christmas</span></h3>
+		<hr>
+		<img id="te" src="media/크리스마스 테두리.png"
+		width="500" height="400"
+		alt="카드 테두리">
+		<img id="tree" src="media/christmastree.png"
+		width="300" height="300"
+		alt="크리스마스 트리">
+		<img id="asd" src="media/크리스마스장식 1.png"
+		width="80" height="80"
+		alt="크리스마스장식">
+		<img id="qwer" src="media/눈사람.png"
+		width="80" height="80"
+		alt="눈사람">
+		<img id="zxc" src="media/종.png"
+		width="80" height="80"
+		alt="종">
+		<div id="music">
+			<audio src="media/Justin Bieber - Mistletoe.mp3" controls autoplay loop></audio>
+			</audio>
+        </div>
+        <div id="hm04">
+				hm04
+		</div>
+		<div><p style="left:320px; top:130px; background: none;">
+			<span>Merry Christmas</span>
+		</p>
+		</div>
+		<div>
+			<p style="left: 202px; top: 120px;  background-color: yellow;">
+				<span>M</span>
+			</p>
+			<p style="left: 180px; top: 140px; background-color: beige;">
+				<span>E</span>
+			</p>
+			<p style="left: 200px; top: 160px; background-color: violet;">
+				<span>R</span>
+			</p>
+			<p style="left:220px; top:180px;background-color: whitesmoke;">
+				<span>R</span>
+			</p>
+			<p style="left:200px; top:200px;background-color: aqua;">
+				<span>Y</span>
+			</p>
+			<p style="left: 180px; top: 220px; background-color: yellow;">
+				<span>X</span>
+			</p>
+			<p style="left:200px; top:240px; background-color:hotpink;">
+				<span>-</span>
+			</p>
+			<p style="left: 220px; top: 260px;  background-color: azure;">
+				<span>M</span>
+			</p>
+			<p style="left:240px; top:280px; background-color: rebeccapurple;">
+				<span>A</span>
+			</p>
+			<p style="left:220px; top:300px; background-color: black;">
+				<span>S</span>
+			</p>
+			<P style="width:38px; left: 400px; top: 300px; background-color: royalblue;">
+				<a href="hm04_x-mas.html" target="right">클릭</a>
+			</P>
+	</body>
+
+</html>

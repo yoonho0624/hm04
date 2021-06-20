@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<!--이 부분은 주석문입니다. 웹 브라우저는 주석을 화면에 출력하지 않습니다.-->
+<html>
+	<head>
+		<!-- 문서제목, 자바스크립트 코드, CSS 스타일 정의, 메타데이터정의 -->
+		<meta charset="utf-8">
+		<title> hm04 알라딘</title>
+		<style>
+		
+		</style>
+		<script>
+			function change() {
+			  var p = document.getElementById("firstP");
+			  p.innerHTML = "<img src='media/알라딘.jpg'> </img>";
+			}
+			function startScroll(interval) {
+        setInterval("autoScroll()", interval);
+      }
+        
+      function autoScroll() {
+        window.scrollBy(0, 50);
+      }
+		  </script>
+	</head>
+
+	<body onload="startScroll(500)">
+		<h3>알라딘</h3>
+		<hr />
+		<ul>
+			<li><a href="https://www.youtube.com/watch?v=KrM3vS5sy2w" target="_top">예고편 보러 가기</a></li>
+			<li><h3>알라딘
+				<h3><p id="firstP" style="color:rgb(55, 158, 55)" onclick="change();">
+					포스터를 보고 싶으면 <span style="color:hotpink">클릭하세요</span>
+				  </p>
+				<li><hr>감독 : 가이 리치
+				<li><hr>배우 : 메나 마수드, 윌 스미스, 나오미 스콧
+				<p><img src="media/메나 마수드.jpeg" width="300" height="200"><img src="media/윌 스미스.jpeg" width="300" height="200"><img src="media/나오미 스콧.jpeg" width="300" height="200"></p>
+			</h3></li>
+			<li><hr><h3>줄거리</h3>
+			<P>
+				머나먼 사막 속 신비의 아그라바 왕국의 시대. 좀도둑 ‘알라딘’은 마법사 ‘자파’의 의뢰로 마법 램프를 찾아
+				 나섰다가 주인에게 세 가지 소원을 들어주는 지니를 만나게 되고, 자스민 공주의 마음을 얻으려다 생각도 
+				 못했던 모험에 휘말리게 되는데…
+			</P></li>
+		</ul>
+	</body>
+
+</html>
+
